@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap");
+
+/* ═══════════════════════════════════════════════════
+   PoetryDNA – Design System
+   ═══════════════════════════════════════════════════ */
+
+/* ── Tailwind Base ────────────────────────────────── */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ── Base Overrides ───────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: #0D0C0A;
+  color: #E8E0D0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ═══════════════════════════════════════════════════
+   Component Styles
+   ═══════════════════════════════════════════════════ */
+
+/* ── Content Wrapper ──────────────────────────────── */
+.content-wrap {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .content-wrap { padding: 0 2.5rem; }
+}
+
+@media (min-width: 1024px) {
+  .content-wrap { padding-left: 7rem; padding-right: 2.5rem; }
+}
+
+/* ── Glass Panel ──────────────────────────────────── */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: border-color 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.glass-panel:hover {
+  border-color: rgba(201, 168, 76, 0.15);
+}
+
+/* ── Metric Card ──────────────────────────────────── */
+.metric-card {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ── Hero Glow ────────────────────────────────────── */
+.hero-glow {
+  background: radial-gradient(ellipse 60% 50% at 50% 120%, rgba(201, 168, 76, 0.08), transparent);
+}
+
+/* ── Section Eyebrow ──────────────────────────────── */
+.section-eyebrow {
+  font-family: "DM Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: #C9A84C;
+}
+
+/* ── Ink Button ───────────────────────────────────── */
+.ink-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2.25rem;
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  border-radius: 9999px;
+  background: rgba(201, 168, 76, 0.06);
+  color: #C9A84C;
+  font-family: "DM Mono", monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ink-button:hover {
+  background: rgba(201, 168, 76, 0.14);
+  border-color: rgba(201, 168, 76, 0.55);
+  box-shadow: 0 0 28px rgba(201, 168, 76, 0.12);
+}
+
+.ink-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ── Plot Frame ───────────────────────────────────── */
+.plot-frame {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ── Scroll Reveal (handled via JS IntersectionObserver) ──── */
+/* NOTE: Do NOT add visibility:hidden here — results are rendered
+   dynamically after prediction and must start visible for the
+   IntersectionObserver to animate them correctly. */
+
+/* ── Scrollbar Styling ────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(201, 168, 76, 0.2);
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(201, 168, 76, 0.35);
+}

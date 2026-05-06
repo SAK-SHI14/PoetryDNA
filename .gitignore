@@ -1,0 +1,91 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+
+# ── Virtual environments ───────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+backend/.venv/
+
+# ── Secrets & credentials ──────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.secret
+*.key
+secrets.json
+config.local.py
+
+# ── Large model / data files (tracked by Git LFS instead) ─────────────────────
+*.pt
+*.pth
+*.pkl
+*.pickle
+*.joblib
+*.bin
+*.onnx
+*.h5
+*.hdf5
+*.safetensors
+*.npz
+*.npy
+
+# ── Zip archives (too large for regular git) ───────────────────────────────────
+*.zip
+*.tar.gz
+*.tar.bz2
+*.7z
+*.rar
+
+# ── Node / Frontend ───────────────────────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+.parcelcache/
+
+# ── Jupyter Notebooks checkpoints ─────────────────────────────────────────────
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# ── OS files ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE / Editor ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+npm-debug.log*
+yarn-error.log*
+
+# ── Dataset raw files (keep processed artifacts, ignore raw dumps) ─────────────
+dataset/raw/
+dataset/*.csv
+dataset/*.json
+# Allow the processed corpus used by backend (small)
+!dataset/corpus.json
+
+# ── HF Space secrets (never commit tokens) ───────────────────────────────────
+DL-Mehtab/hf_space/.env
