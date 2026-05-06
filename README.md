@@ -11,6 +11,7 @@
 
 **PoetryDNA** identifies the author of any poem using a hybrid fusion of deep learning (DistilBERT) and classical machine learning (LightGBM + SBERT), with an interactive "Record Sleeve" UI that visually explains every step of the inference process.
 
+> **Live Website:** [https://poetry-dna.vercel.app](https://poetry-dna.vercel.app)  
 > **88.5% fusion accuracy** · 2,495 training stanzas · 6 poets · 3 models fused
 
 </div>
@@ -26,9 +27,10 @@
 5. [Backend — FastAPI](#backend)
 6. [Frontend — React + Vite](#frontend)
 7. [Deployment](#deployment)
-8. [Setup & Running Locally](#setup--running-locally)
-9. [Project Structure](#project-structure)
-10. [Team](#team)
+8. [Documentation & Study Guides](#documentation--study-guides)
+9. [Setup & Running Locally](#setup--running-locally)
+10. [Project Structure](#project-structure)
+11. [Team](#team)
 
 ---
 
@@ -287,6 +289,15 @@ npm install
 npm run dev        # development
 npm run build      # production bundle
 ```
+
+---
+
+## Documentation & Study Guides
+
+We have provided detailed guides to help understand the project and the underlying NLP concepts:
+
+- **[Complete NLP Pipeline Guide](docs/PoetryDNA_NLP_Complete_Guide.md)**: A deep dive into every feature, function, and decision made in the NLP pipeline.
+- **[Interactive NLP Study Guide](docs/nlp_study_guide.html)**: A standalone interactive guide covering NLP from zero to hero (Prerequisites, History, Core Tasks, and more).
 
 ---
 
